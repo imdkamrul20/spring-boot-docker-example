@@ -16,7 +16,7 @@ steps:
   args: [
     'run', 'deploy', '${_SERVICE_NAME}',
     '--image', 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}:${SHORT_SHA}',
-    '--region', 'us-central1',
+    '--region', 'global (non-regional)',
     '--platform', 'managed',
     '--allow-unauthenticated',
     '--port', '8080',  # Specify the port to expose
