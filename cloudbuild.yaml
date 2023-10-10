@@ -18,6 +18,5 @@ steps:
     '--image', 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}:${SHORT_SHA}',
     '--region', 'us-central1',
     '--platform', 'managed',
-    '--allow-unauthenticated',
-    '--port', '8080',  # Specify the port to expose
+    '--allow-unauthenticated'
   ]
